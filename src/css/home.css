@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/font/poppins/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(/font/poppins/Poppins-Light.otf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(/font/poppins/Poppins-Medium.otf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/font/inter/Inter-Regular.otf);
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(/font/inter/Inter-Light.otf);
+}
+
+.container-signal {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00bdd6;
+}
+
+.img-time {
+  flex: 1;
+}
+
+.overlap-group {
+  width: 100%;
+  background-color: #00bdd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+}
+
+.search {
+  height: 1.8rem;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  gap: 0.5em;
+}
+
+.search img {
+  padding-left: 0.5em;
+}
+
+.search .scan {
+  padding-right: 0.5em;
+}
+.search input {
+  width: 100%;
+  height: 1.2rem;
+  border: 0;
+  border-radius: 2px;
+}
+
+.shopping-card {
+  background-color: white;
+  height: 1.8em;
+  border-radius: 2px;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.category {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 0.1em;
+}
+
+.categories {
+  height: 3em;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.hero-mobile {
+  background-color: #a6f5ff;
+  height: 12rem;
+  width: 100%;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.image-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 12rem;
+}
+
+#title-ecom {
+  color: #00bdd6;
+  font-family: "Poppins-Bold";
+  align-self: center;
+  font-size: 4vh;
+}
+#desc-ecom {
+  font-size: 70%;
+  text-align: center;
+  font-weight: 400;
+  color: #565e6c;
+  line-height: 1.5em;
+  font-family: "Inter-Light";
+}
+#btn-ecom {
+  background-color: #00bdd6;
+  color: white;
+  border: 0;
+  padding: 1em 3.3em;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.flash-sale {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.flash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash-sale p {
+  color: #1ce5ff;
+  font-family: "Poppins-Light";
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.flash-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.time-sale {
+  border: 1px solid rgb(101, 100, 100);
+  padding: 0 0.6em;
+  color: #00bdd6;
+  border-radius: 3px;
+}
+
+.card-flash-sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.card {
+  border-radius: 10px;
+  height: 25vh;
+  width: 45%;
+  font-family: "Inter";
+  font-size: 0.7em;
+  background-color: rgb(255, 251, 251);
+}
+
+.card-image {
+  border-radius: 10px 0 0;
+  height: 50%;
+  background-size: cover;
+}
+
+.card-property {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Inter-Light";
+}
+
+.card-property span {
+  font-weight: 600;
+}
+
+.card-property p {
+  font-family: "Poppins-Bold";
+  font-size: 3vw;
+  color: #00bdd6;
+}
+
+.start-card p {
+  color: #9095a0;
+}
+
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card span {
+  font-size: 2vh;
+}
+
+.start-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1em;
+}
+
+.start-card p {
+  font-size: 9px;
+}
+
+.flora,
+.furniture {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.furniture {
+  margin-top: 2em;
+}
+
+.flora-card,
+.furniture-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.flora-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flora-title p,
+.flora-title h6,
+.furniture-title p,
+.furniture h6 {
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: "Inter";
+}
+
+.flora-title h6,
+.furniture-title h6 {
+  color: #00bdd6;
+}
+
+.furniture-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flora p,
+.furniture p {
+  font-family: "Poppins-Bold";
+  align-self: first baseline;
+}
+
+.call-action {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 17rem;
+  background-color: #0095a9;
+}
+
+.call-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-title p {
+  font-size: 1.5em;
+  font-family: "Poppins-Bold";
+  color: white;
+}
+
+.call-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  margin-left: 2em;
+  padding-right: 0.65em;
+
+  font-size: 0.7em;
+  line-height: 1.5em;
+  color: white;
+  font-weight: 400;
+  font-family: "Inter";
+}
+
+.call-left button {
+  border: 0;
+  padding: 1em 2em;
+  border-radius: 15px;
+  color: white;
+  background-color: #ed7d2d;
+}
+
+.call-right {
+  width: 50%;
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whats-new {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.whats-new p {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Poppins-Bold";
+}
+
+.a {
+  background-image: url(/src/img/mobile/Image\ 50.png);
+  background-size: cover;
+}
+.b {
+  background-image: url(/src/img/mobile/Image\ 51.png);
+  background-size: cover;
+}
+.c {
+  background-image: url(/src/img/mobile/Image\ 50.png);
+  background-size: cover;
+}
+.d {
+  background-image: url(/src/img/mobile/Image\ 51.png);
+  background-size: cover;
+}
+.e {
+  background-image: url(/src/img/mobile/Image\ 53.png);
+  background-size: cover;
+}
+.f {
+  background-image: url(/src/img/mobile/Image\ 52.png);
+  background-size: cover;
+}
+.g {
+  background-image: url(/src/img/mobile/Image\ 54.png);
+  background-size: cover;
+}
+.h {
+  background-image: url(/src/img/mobile/Image\ 55.png);
+  background-size: cover;
+}
+
+.i {
+  background-image: url(/src/img/mobile/Image\ 59.png);
+  background-size: cover;
+  height: 50%;
+}
+
+.j {
+  background-image: url(/src/img/mobile/Image\ 59.png);
+  background-size: cover;
+  background-position: 0 0 3px 3px;
+  height: 50%;
+}
+
+.footer-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+  box-shadow: 0px 0px 1px 0px;
+  height: 3.5em;
+  padding-bottom: 0.5em;
+  font-family: "Inter";
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.item-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6em;
+  color: #565e6c;
+}
+
+.new {
+  margin-bottom: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 798px) {
+  #desc-ecom {
+    display: none;
+  }
+
+  .card-flash-sale .card {
+    width: 30%;
+  }
+
+  .card-image {
+    height: 12vh;
+  }
+
+  .card {
+    height: 22vh;
+  }
+
+  .flora p,
+  .furniture p,
+  .card-property p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .product-card span {
+    font-size: 1.4em;
+  }
+
+  .flora .card,
+  .furniture .card {
+    width: 30%;
+  }
+
+  .hidden {
+    display: block;
+  }
+}

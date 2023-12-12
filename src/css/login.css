@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navMobile {
+  background-color: #00bdd6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time {
+  flex: 1;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-toko {
+  border-radius: 50%;
+}
+
+.signinform {
+  height: 120vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 3px;
+  gap: 0.5em;
+}
+
+.signinform p {
+  font-size: 9vw;
+  font-weight: bold;
+}
+
+.compLabel {
+  display: flex;
+  justify-content: left;
+  align-items: last baseline;
+  flex-direction: column;
+  height: 5em;
+}
+
+.labelInput {
+  font-weight: 600;
+}
+
+.input-signIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 75vw;
+  background-color: #f3f4f6;
+  border-radius: 7px;
+  padding: 0 1em;
+}
+.input-signIn input {
+  width: 64.5em;
+  height: 2.5em;
+  border-radius: 5px;
+  border: 1px solid;
+  border-radius: 7px;
+  border: none;
+  background-color: #f3f4f6;
+  margin-left: 0.5em;
+}
+
+.close-input {
+  width: 1.5em;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75vw;
+}
+
+.remember p {
+  font-size: 15px;
+}
+
+.remember1 {
+  flex: 1;
+}
+
+.remember1 p {
+  font-weight: 400;
+}
+
+.remember1 input[type="checkbox"]:checked {
+  color: red;
+}
+
+.remember2 p {
+  flex: 1;
+  font-weight: 500;
+  color: #00bdd6;
+}
+
+#btnSubmit {
+  width: 45vw;
+  height: 5vh;
+  border-radius: 26px;
+  color: white;
+  background-color: #00bdd6;
+  border: none;
+}
+
+.continue-Google {
+  margin: 3em 0 1em;
+}
+
+.continue-Google h6 {
+  font-size: 12px;
+}
+
+.sigIn-Sosmed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10rem;
+}
+/* 
+.sigIn-Sosmed img {
+  
+} */
+
+.dont-Have-Account {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+#sign {
+  color: #00bdd6;
+  font-size: 15px;
+}
+
+#dont {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.hero-ecomDisplay {
+  display: none;
+  background-color: #a6f5ff;
+}
+
+.profile-company {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navMobile {
+    display: none;
+  }
+
+  .bodies {
+    background-color: #d4f4f9;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .hero-ecomDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 30rem;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .hero-ecomDisplay img {
+    width: 22vw;
+    height: 16rem;
+  }
+
+  .bodies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 30rem;
+    border-radius: 10px;
+  }
+
+  .signinform {
+    width: 60vw;
+    height: 30rem;
+    box-shadow: 0px 0px 0px;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  .input-signIn {
+    width: 25vw;
+    height: 2.5em;
+  }
+
+  .input-signIn input {
+    height: 2.5em;
+  }
+
+  .signinform p {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .compLabel {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .remember {
+    width: 24vw;
+  }
+  .remember2 p,
+  .remember1 p {
+    font-size: 14px;
+  }
+
+  #btnSubmit {
+    padding: 1.3em 0;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .continue-Google {
+    margin: 1em 0 0.25em;
+  }
+
+  .continue-Google h6 {
+    font-weight: 600;
+  }
+
+  .dont-Have-Account {
+    margin-top: 0;
+  }
+
+  #sign,
+  #dont {
+    font-size: 12px;
+  }
+
+  .round-big {
+    width: 20rem;
+    height: 20rem;
+    background-color: #a6f5ff;
+    position: fixed;
+    border-radius: 50%;
+    top: 48vh;
+    left: 8vw;
+  }
+
+  .round-little {
+    width: 12rem;
+    position: fixed;
+    height: 12rem;
+    background-color: #a6f5ff82;
+    border-radius: 50%;
+    top: 5%;
+    right: 15%;
+  }
+
+  main {
+    z-index: 1000;
+    background-color: #ebfdff;
+  }
+
+  .profile-company {
+    display: block;
+    position: absolute;
+    top: 6vh;
+    border-radius: 50%;
+    left: 8vw;
+  }
+}
