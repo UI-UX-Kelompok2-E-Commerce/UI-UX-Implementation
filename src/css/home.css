@@ -28,6 +28,11 @@ body {
   src: url(/font/inter/Inter-Light.otf);
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(/font/roboto/Roboto-Regular.ttf);
+}
+
 .kontainer-signal {
   width: 100% !important;
   display: flex !important;
@@ -112,7 +117,7 @@ body {
 
 .hero-mobile {
   background-color: #a6f5ff !important;
-  height: 12rem !important;
+  height: 12rem;
   width: 100% !important;
   border-radius: 20% !important;
   display: flex !important;
@@ -143,12 +148,12 @@ body {
   font-size: 4vh !important;
 }
 #desc-ecom {
-  font-size: 70% !important;
+  font-size: 1.38vh !important;
   text-align: center !important;
-  font-weight: 400 !important;
+  font-weight: 400;
   color: #565e6c !important;
   line-height: 1.5em !important;
-  font-family: "Inter-Light" !important;
+  font-family: "Inter-Light";
 }
 #tombol-ecom {
   background-color: #00bdd6 !important;
@@ -205,17 +210,19 @@ body {
 }
 
 .kartu {
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
   border-radius: 10px !important;
   height: 25vh !important;
   width: 45% !important;
   font-family: "Inter" !important;
   font-size: 0.7em !important;
   background-color: rgb(255, 251, 251) !important;
+  overflow: hidden;
 }
 
 .kartu-image {
   border-radius: 10px 0 0 !important;
-  height: 50% !important;
+  height: 55% !important;
   background-size: cover !important;
 }
 
@@ -374,8 +381,8 @@ body {
   width: 50% !important;
   margin-right: 1em !important;
   display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .whats-new {
@@ -393,49 +400,75 @@ body {
 }
 
 .a {
-  background-image: url(/src/img/mobile/Image\ 50.png) !important;
+  background-image: url(/src/img/Image\ 50.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .b {
-  background-image: url(/src/img/mobile/Image\ 51.png) !important;
+  background-image: url(/src/img/Image\ 51.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .c {
   background-image: url(/src/img/mobile/Image\ 50.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .d {
   background-image: url(/src/img/mobile/Image\ 51.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .e {
-  background-image: url(/src/img/mobile/Image\ 53.png) !important;
+  background-image: url(/src/img/Image\ 53.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .f {
-  background-image: url(/src/img/mobile/Image\ 52.png) !important;
+  background-image: url(/src/img/Image\ 52.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .g {
-  background-image: url(/src/img/mobile/Image\ 54.png) !important;
+  background-image: url(/src/img/Image\ 54.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 .h {
-  background-image: url(/src/img/mobile/Image\ 55.png) !important;
+  background-image: url(/src/img/Image\ 55.png) !important;
   background-size: cover !important;
+  height: 55% !important;
 }
 
 .i {
   background-image: url(/src/img/mobile/Image\ 59.png) !important;
   background-size: cover !important;
-  height: 50% !important;
+  height: 55% !important;
 }
 
 .j {
-  background-image: url(/src/img/mobile/Image\ 59.png) !important;
+  background-image: url(/src/img/Image\ 61.png) !important;
   background-size: cover !important;
   background-position: 0 0 3px 3px !important;
-  height: 50% !important;
+  height: 55% !important;
+}
+
+.k {
+  background-image: url(/src/img/Image\ 56.png) !important;
+  background-size: cover !important;
+  height: 55% !important;
+}
+
+.l {
+  background-image: url(/src/img/Image\ 57.png) !important;
+  background-size: cover !important;
+  height: 55% !important;
+}
+
+.m {
+  background-image: url(/src/img/Image\ 60.png) !important;
+  background-size: cover !important;
+  height: 55% !important;
 }
 
 .footer-mobile {
@@ -487,7 +520,20 @@ footer {
     display: none;
   }
   #desc-ecom {
-    display: none !important;
+    padding: 0 5em;
+    margin-top: -0.15em;
+    font-weight: 100;
+    font-family: "Roboto-Regular";
+    letter-spacing: 0.75px;
+  }
+
+  .hero-mobile {
+    height: 14rem;
+  }
+
+  .image-hero img {
+    height: 100%;
+    width: 70%;
   }
 
   .kartu-flash-sale .kartu {
@@ -500,6 +546,15 @@ footer {
 
   .kartu {
     height: 22vh !important;
+  }
+
+  .call-right {
+    justify-content: end;
+  }
+
+  .call-right img {
+    width: 45%;
+    height: 100%;
   }
 
   .flora p,
@@ -516,6 +571,11 @@ footer {
   .flora .kartu,
   .furniture .kartu {
     width: 30% !important;
+  }
+
+  .whats-new img {
+    height: 12vh;
+    width: 30vw;
   }
 
   .hidden {
@@ -665,9 +725,11 @@ footer {
 
   .left-hero p {
     color: #707783;
-    padding-right: 2em;
+    text-align: justify;
+    padding-right: 6em;
     line-height: 28px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.4px;
+    font-family: "Roboto-Regular";
   }
 
   .left-hero button {
@@ -681,7 +743,7 @@ footer {
   }
 
   .right-hero {
-    height: 75vh;
+    height: 73vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -795,6 +857,11 @@ footer {
     height: 5rem;
   }
 
+  .left-title-product span {
+    font-weight: bold;
+    opacity: 70%;
+  }
+
   .left-title-product,
   .right-title-product {
     display: flex;
@@ -893,6 +960,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 82%;
+    margin-bottom: 2em;
   }
 
   .title-whats-new-web span {
@@ -1050,12 +1118,12 @@ footer {
     font-weight: 300;
     gap: 0.4em;
     color: #dee1e6;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   #main-web-list {
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
