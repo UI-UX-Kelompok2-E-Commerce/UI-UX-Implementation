@@ -73,6 +73,11 @@ body {
   margin-left: 0.5em;
 }
 
+.compLabel:first-child input[type="text"] {
+  width: 100%;
+  background-color: aqua;
+}
+
 .close-input {
   width: 1.5em;
 }
@@ -221,7 +226,7 @@ body {
   }
 
   .input-signIn input {
-    height: 2.5em;
+    height: 2.08em;
   }
 
   .signinform p {

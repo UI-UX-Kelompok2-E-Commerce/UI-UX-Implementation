@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ebfdff;
-  height: 100vh;
 }
 
 .navbar {
@@ -236,6 +235,47 @@ main {
 .footer,
 .rectangle-image {
   display: none;
+}
+
+@media only screen and (min-width: 798px) and (max-width: 1023px) {
+  .btn-continue {
+    padding-bottom: 10em;
+    margin-bottom: -3em;
+  }
+
+  .footer {
+    height: 9rem;
+    background-color: #001d21;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    bottom: 0;
+    position: static;
+  }
+
+  .footer-left {
+    color: #ffffff;
+    display: flex;
+    gap: 1.5em;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+  }
+
+  .footer-right {
+    width: 50%;
+    color: #ffffff;
+    display: flex;
+    gap: 0.5em;
+    justify-content: right;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
